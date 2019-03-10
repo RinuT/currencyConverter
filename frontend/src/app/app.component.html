@@ -1,0 +1,13 @@
+<div *ngIf="serverCheck" >
+  <div class="alert alert-danger">{{status}}</div></div>
+<!-- Reusable convertor widget for User Story-->
+<convertor-widget (getConvertionData)="convertCurrency($event)"></convertor-widget>
+<form>
+<div class="container">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Converted Amount</label>
+    <input type="number" class="form-control" name="result" [(ngModel)]="result" placeholder="Converted Amount" readonly>
+  </div>
+</div>
+
+</form>
