@@ -8,7 +8,7 @@ import { Responses } from '../model/response';
 @Injectable()
 export class CurrencyService {
   constructor( private _httpService: Http){}
-   _url:string='http://localhost:8080/currency';
+   _url:string='http://localhost:8080/api/v1/currency';
   convertCurrency(Currency): Observable<Responses> {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
