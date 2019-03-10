@@ -19,6 +19,7 @@ import com.SpringApp.CurrencyConverter.util.CurrencyConverter;
  */
 @CrossOrigin("*")
 @RestController
+@RequestMapping("api/v1")
 public class CurrencyCalculatorController {
 	
 	@Autowired
